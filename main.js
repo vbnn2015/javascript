@@ -47,44 +47,27 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-// "use strict";
-
-// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
-
-// let personalMovieDB = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: "false",
-// };
-// const posledniProsmotreniy = prompt(
-//   "Один из последних просмотренных фильмов?",
-//   "",
-// );
-// const o4nkaFilma = prompt("На сколько оцените его?", "");
-
-// const a = prompt("Один из последних просмотренных фильмов?", "");
-// const b = prompt("На сколько оцените его?", "");
-
-// personalMovieDB.movies[posledniProsmotreniy] = o4nkaFilma;
-// personalMovieDB.movies[a] = b;
-// console.log(personalMovieDB);
-
-//Задачи
 "use strict";
 
-const arr = [
-  { name: "Ноут", price: 30000, dostavka: 500 },
-  { name: "Смартфон", price: 10000, dostavka: 1000 },
-  { name: "Планшет", price: 25000, dostavka: 1000 },
-];
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
-// arr.forEach((fun) => {
-//   const allPrice = fun.price + fun.dostavka;
-//   console.log(allPrice);
-// });
+let personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: "false",
+};
+const posledniProsmotreniy = prompt(
+  "Один из последних просмотренных фильмов?",
+  "",
+);
+const o4nkaFilma = prompt("На сколько оцените его?", "");
 
-for (const key in arr) {
-  console.log(arr[key]);
-}
+const a = prompt("Один из последних просмотренных фильмов?", "");
+const b = prompt("На сколько оцените его?", "");
+
+personalMovieDB.movies[posledniProsmotreniy] = o4nkaFilma;
+personalMovieDB.movies[a] = b;
+console.log(personalMovieDB);
+console.log(personalMovieDB);
